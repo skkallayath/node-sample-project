@@ -3,5 +3,6 @@ module.exports = function (req, res, next) {
         res.locals.layout = 'layouts/main';
         return next()
     }
+    req.session.redirectTo = req.path;
     res.redirect('/login')
 };

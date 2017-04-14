@@ -19,7 +19,7 @@ $("#signup_form").validate({
         username: {
             required: "Please enter a username",
             minlength: "Your username must consist of at least 2 characters",
-            alphanumeric: "Your username cannot contaign specialcharacters"
+            alphanumeric: "Special characters are not allowed"
         },
         password: {
             required: "Please provide a password",
